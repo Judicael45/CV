@@ -1,0 +1,500 @@
+  /*STYLES GENERAUX*/
+  * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+
+
+
+
+  .switch {
+    padding: 2%;
+    position: relative;
+    color: black
+  }
+
+  .switch1 {
+    position: relative;
+    color: whitesmoke;
+  }
+
+
+
+  header label input {
+    display: inline-table;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .TitreCV {
+    display: flex;
+    margin: 1%;
+    color: rgb(241, 201, 99);
+  }
+
+  :root {
+    --font: rgb(20, 20, 20);
+    --text: #8337A6;
+  }
+
+  body {
+    display: flex;
+    background-color: var(--font);
+    color: var(--text);
+  }
+
+  p {
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  /*HEADER & FOOTER*/
+  header {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10%;
+    padding: 20px 0;
+    background: url("Assets/profile.webp") #4f4f4f;
+    box-shadow: 0px 0px 15px #333;
+    background-image: url(Assets/HeaderW.jpg);
+    border-radius: 10px;
+  }
+
+
+
+  .header h1 {
+    color: #b3dee5;
+    font-size: 24px;
+    line-height: 1.5;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .Tcomp {
+    text-align: center;
+    color: rgb(241, 201, 99);
+  }
+
+  .comp3,
+  .comp4 {
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+    height: 25%;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  .interet {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  footer {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    border-top: 2px solid var(--text);
+  }
+
+  footer p {
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(241, 201, 99);
+    text-align: center;
+  }
+
+  footer a {
+    color: var(--text);
+  }
+
+
+
+  /*SECTIONS*/
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 10px;
+  }
+
+
+
+  section h2 {
+    margin: 20px 0;
+    width: 90%;
+  }
+
+
+
+  section>div {
+    width: 90%;
+  }
+
+
+
+  /*SECTION INFOS*/
+  .photo {
+    text-align: center;
+    padding-left: 40%;
+  }
+
+  .photo .Profil {
+    width: 13rem;
+    aspect-ratio: 1/1;
+    border: 3px solid rgb(241, 201, 99);
+    box-shadow: 0px 0px 10px rgb(241, 201, 99);
+    border-radius: 50%;
+    margin-top: -80px;
+  }
+
+  .prez {
+    border-bottom: 2px dashed;
+  }
+
+  .mail {
+    color: rgb(69, 69, 247);
+    text-decoration: underline;
+  }
+
+  .prez a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: rgb(69, 69, 247);
+    background-color: rgb(241, 201, 99);
+    box-shadow: 0px 0px 10px var(--text);
+    border-radius: 5px;
+  }
+
+  .contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .contact-flex p:first-child {
+    flex: 0 0 40%;
+  }
+
+  .contact-flex p:last-child {
+    flex: 0 0 60%;
+  }
+
+
+
+  .conteneur1 {
+    overflow: hidden;
+    max-width: 960px;
+    margin: 50px auto;
+    box-shadow: 0px 15px 10px -5px;
+  }
+
+  .d1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/diapo123.png");
+    background-size: contain;
+    animation: defilement1 12s linear infinite;
+  }
+
+
+
+  .conteneur2 {
+    max-width: 960px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px;
+  }
+
+  .d2 {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    background-image: url("https://www.pierre-giraud.com/wp-content/uploads/2019/07/diapo123.png");
+    background-size: contain;
+    animation: defilement2 12s linear infinite;
+  }
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+  }
+
+  /*CAROUSEL*/
+  .contact-group {
+    float: left;
+    display: contents;
+  }
+
+  .container {
+    float: right;
+    position: relative;
+    max-width: 400px;
+    margin-left: 30%;
+    padding: 0px;
+  }
+
+
+  .slider {
+
+    padding: 20px;
+  }
+
+  .slider img {
+    aspect-ratio: 1/1;
+
+    width: 15rem;
+    object-fit: cover;
+    object-position: center;
+    margin: 50px auto;
+    position: relative;
+    max-width: 100%;
+    display: none;
+  }
+
+  img.active {
+
+    display: flex;
+    animation: fade 0.8s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .cont-btn {
+
+    width: 100%;
+    height: auto;
+
+
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .btn-nav {
+    color: rgb(241, 201, 99);
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  /*centre d'interet*/
+
+  .exp {
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+  }
+
+  .exp-logo {
+    flex: 0 0 25%;
+    max-width: 100px;
+  }
+
+
+
+
+  /*groupe de carte compétence*/
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+
+    overflow: hidden;
+  }
+
+  .card {
+    margin-top: 10%;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    object-fit: cover;
+    max-height: max(10rem, 30vh);
+    aspect-ratio: 4/3;
+    mix-blend-mode: var(--card-blend-mode);
+  }
+
+  body {
+    display: inline-block;
+    width: 100%;
+    place-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3rem;
+    line-height: 1.5;
+
+  }
+
+  .card-wrapper {
+    margin: 0 auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 100%;
+    padding: 1rem;
+    
+  }
+
+  .progressB {
+    margin: 5px;
+    width: 98%;
+    border-radius: 15px;
+  }
+
+  .SkillB {
+    background-color: orangered;
+    color: black;
+    padding: 2%;
+    margin: 3%;
+    width: 80%;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+
+  .progressB1 {
+    margin: 10px;
+    width: 98%;
+    border-radius: 15px;
+  }
+
+  .SkillB1 {
+    background-color: rgb(6, 135, 240);
+    color: black;
+    padding: 2%;
+    margin: 5%;
+    width: 80%;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+
+  .progressB2 {
+    margin: 10px;
+    width: 98%;
+    border-radius: 15px;
+  }
+
+  .SkillB2 {
+    background-color: rgba(255, 238, 0, 0.822);
+    color: black;
+    padding: 2%;
+    margin: 5%;
+    width: 50%;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 15px;
+  }
+
+  .ImgC {
+    position: relative;
+    display: flex;
+    perspective: 100px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .ctext1 {
+    
+    color: orangered;
+    text-align: center;
+  }
+
+  .ctext2 {
+    color: blue;
+    text-align: center;
+  }
+
+  .ctext3 {
+    color: rgb(255, 238, 0);
+    text-align: center;
+  }
+
+  .card p {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  footer {
+    max-width: 100%;
+    background: url("Assets/profile.webp") #4f4f4f;
+    box-shadow: 0px 0px 15px #333;
+    background-image: url(Assets/HeaderW.jpg);
+    height: 120px;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-color: #0003;
+    border-radius: 10px;
+  }
+
+  footer p {
+    position: relative;
+    margin-top: 3%;
+  }
+
+  @media screen and (max-width: 400px) {
+    .container {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .photo .Profil {
+      width: 5rem;
+      height: 5rem;
+      margin-top: -2rem
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .photo .Profil {
+      width: 5rem;
+      height: 5rem;
+      margin-top: -2rem
+    }
+  }
